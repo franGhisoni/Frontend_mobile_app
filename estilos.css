@@ -1,0 +1,191 @@
+
+.amarillito { color: #F2A30F; }
+.naranjita { color: #F2790F; }
+.rosita { color: #fbdec5; }
+.rojito { color: #BF2011; }
+.blanquito { color: #F2F2F2; }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+ul li{
+    margin: 20px auto;
+    list-style-type: none;
+}
+ul li a .btnmenu{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+
+}
+.isologo img{
+    width: 45vw;
+}
+.fondo{
+    background-color: #f2a30f;
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+
+}
+.navegador{
+    background: linear-gradient( rgba(255,255,255,0) , black);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    /*border-radius: 30px 30px 0px 0;
+    box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, 0.5);*/
+}
+#guardardatos{
+    justify-content: center;
+}
+.guardador{
+    justify-content: center;
+    display: grid;
+}
+.btn-primary{
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    margin:  25px 4px 0px 4px;
+    background-color: #F2790F;
+    border-radius: 30px;
+    border: 1px solid rgba(0,0,0,0);
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+}
+.btn-primary:hover {
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.btnmenu img{
+    width: 10vw;
+
+
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    bottom: 0px;
+}
+
+.algo{
+    font-size: 50px;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+background: linear-gradient( #F2A30F,  white, white, white, white);
+}
+.itemgrilla img{
+    max-width: 100%;
+    height: auto;
+   border-radius: 20px;
+    z-index: 6;
+}
+.itemgrilla{
+    transition: transform .2s;
+    border-radius: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    box-sizing: content-box;
+    margin: 10px;
+    position: relative;
+
+
+}
+
+.itemgrilla:first-child{
+    margin-top: 110px;
+}
+.itemgrilla:last-child{
+    margin-bottom: 110px;
+}
+
+div h3 {
+    padding: 20px;
+    background: linear-gradient( black, rgba(255,255,255,0) );
+    text-align: center;
+    color: #F2F2F2;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+#lupa{
+    height: 18px;
+    opacity: 40%;
+    margin: 15px 5px 15px 15px;
+
+}
+.buscadorEntero{
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+.grid {
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+
+}
+.redondeo{
+    width: 100%;
+    max-width: 582px;
+    max-height: 50px;
+    display: inline-flex;
+    grid-column-gap: 10px;
+    grid-template-columns: 30px auto 30px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 100px;
+    padding: 0px 20px 0px 0px;
+    background-color: #F2F2F2;
+    z-index: 4;
+}
+.redondeo:hover{
+    box-shadow: 0px 1px 6px rgba(32,33,36,0.28);
+
+}
+
+.input{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.0);
+    background-color: #F2F2F2;
+}
+.input:focus{
+    outline: none;
+}
+.filtro{
+    display: none;
+}
+
+.oculto{
+    height: 100%;
+    width: 100vw;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at bottom);
+    transition: clip-path 1s ease-in-out;
+    background-color: white;
+}
+.check:checked + .oculto{
+    clip-path: circle(100% at top);
+}
+.contenedor__todo{
+    margin-top: 110px;
+}
