@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/Isotipo.png">
+    <title>SIPICOOK</title>
+</head>
+<body>
+
+    <main>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <p>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h2>¿Aún no tienes una cuenta?</h2>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <section class="navegador">
+                <nav class="abajo">
+                    <div class="lista">
+                        <ul class="menu">
+                            <li><a class="btnmenu" href="index.html"><img src="img/home.png" alt=""></a></li>
+                            <li><a class="btnmenu" href="ingredientes.html"><img src="img/add.png" alt=""></a></li>
+                            <li><a class="btnmenu" href="recetas.html"><img src="img/like.png" alt=""></a></li>
+                            <li><a class="btnmenu" href="#servicios"><img src="img/user.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </footer>
+        <script src="js/cargarReceta.js"></script>
+        <script src="Frontend/js/assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/Isotipo.png">
+    <title>SIPICOOK</title>
+</head>
+<body>
+<main>
+    <header>
+        <div class="isologo">
+            <a href="index.html"><img id="Isologo" src="img/Isologo.png" alt="Isologo Easy cook"></a>
+        </div>
+    <div class="buscadorEntero">
+        <form id="guardardatos" class="grid">
+                Agrega una imagen de tu receta!
+            <label for="recetaImagen"></label>
+            <input type="file" id="recetaImagen" name="myFile">
+                <div class="redondeo">
+                    <label for="recetatitulo"></label>
+                    <input class="input" id="recetatitulo" type="text" placeholder="Titulo de receta" >
+                </div>
+            <br>
+                <div class="redondeo">
+                    <label for="recetacontenido"></label>
+                    <input class="input" id="recetacontenido" type="text" placeholder="Titulo de receta" >
+                </div>
+            <br>
+            
+                <div> Nivel de dificultad:
+                    <label for="recetaDificultad"></label>
+                    <input type="range" id="recetaDificultad" name="points" min="1" max="5">
+                </div>
+            <br>
+                <div class="guardador">
+                    <button class="btn-primary" type="submit">Guardar receta</button>
+                </div>
+        </form>
+    </div>
+        <div class="itemgrilla">
+            <a href="PabloGhisoni.html">
+                <img src="img/cover_1.jpg" alt="Pablo Ghisoni" class="divimg">
+                <h3 class="receta">Alfajorcitos de Maicena</h3></a>
+</main>
+
+
+
+
+        <footer>
+            <section class="navegador">
+                <nav class="abajo">
+                    <div class="lista">
+                        <ul class="menu">
+                            <li><a class="btnmenu" href="index.html"><img src="img/home.png" alt=""></a></li>
+                            <li><a class="btnmenu" href="ingredientes.html"><img src="img/add.png" alt=""></a></li>
+                            <li><a class="btnmenu" href="recetas.html"><img src="img/like.png" alt=""></a></li>
+                            <li><a class="btnmenu" href="perfil.html"><img src="img/user.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </footer>
+        <script src="js/cargarReceta.js"></script>
+</body>
+</html>
